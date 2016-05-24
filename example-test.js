@@ -4,19 +4,11 @@ const assert = require("chai").assert;
 var suite = TestRunner.suite;
 var test = TestRunner.test;
 
-const browserCode = `(function() { var x=12; return x; })()`;
-
-const nodeCode = `
-  module.exports = function(cb) {
-    console.log("student code");
-    cb("AAA");
-    return function(input) {
-      return 2*input; };
-    }`;
+const untrustedCode = `(function() { var x=12; return x; })()`;
 
 suite(() => {
   
-  test(browserCode, [], "should return a number", (result) => {
+  test(untrustedCode, [], "should return a number", (result) => {
     assert.isNumber(result);
     assert.equal(11, result);
   });
@@ -25,22 +17,9 @@ suite(() => {
     // pass
   });
   
-  test(browserCode, [], "should return a number", (result) => {
+  test(untrustedCode, [], "should return a number", (result) => {
     assert.isNumber(result);
     assert.equal(12, result);
   });
-  
-  // test(browserCode, [], "should return a number", (result) => {
-  //   assert.isNumber(result);
-  //   assert.equal(13, result);
-  // });
-
-  
-  
-  // test(nodeCode, "should return a function", (result) => {
-  //   let params = [];
-  //   runNodeCode(nodeCode, params, (result) => {
-  //   });
-  // });
   
 });
