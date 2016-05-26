@@ -1,0 +1,46 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2016-05-26T21:50:13.297Z",
+    "end": "2016-05-26T21:50:13.303Z",
+    "duration": 6
+  },
+  "tests": [
+    {
+      "title": "Should return null when popping an empty array",
+      "fullTitle": "Function Should return null when popping an empty array",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Should simply equal to twelve!",
+      "fullTitle": "Function Should simply equal to twelve!",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "Should return null when popping an empty array",
+      "fullTitle": "Function Should return null when popping an empty array",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Should simply equal to twelve!",
+      "fullTitle": "Function Should simply equal to twelve!",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}Failures: 0
