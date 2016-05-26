@@ -2,12 +2,12 @@
   "stats": {
     "suites": 1,
     "tests": 2,
-    "passes": 2,
+    "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2016-05-26T21:50:13.297Z",
-    "end": "2016-05-26T21:50:13.303Z",
-    "duration": 6
+    "failures": 1,
+    "start": "2016-05-26T23:48:21.087Z",
+    "end": "2016-05-26T23:48:21.096Z",
+    "duration": 9
   },
   "tests": [
     {
@@ -20,13 +20,33 @@
     {
       "title": "Should simply equal to twelve!",
       "fullTitle": "Function Should simply equal to twelve!",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 12 to equal 11",
+        "showDiff": false,
+        "actual": 12,
+        "expected": 11,
+        "stack": "AssertionError: expected 12 to equal 11\n    at Context.it (concatenated-code.js:28:12)"
+      }
     }
   ],
   "pending": [],
-  "failures": [],
+  "failures": [
+    {
+      "title": "Should simply equal to twelve!",
+      "fullTitle": "Function Should simply equal to twelve!",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 12 to equal 11",
+        "showDiff": false,
+        "actual": 12,
+        "expected": 11,
+        "stack": "AssertionError: expected 12 to equal 11\n    at Context.it (concatenated-code.js:28:12)"
+      }
+    }
+  ],
   "passes": [
     {
       "title": "Should return null when popping an empty array",
@@ -34,13 +54,6 @@
       "duration": 2,
       "currentRetry": 0,
       "err": {}
-    },
-    {
-      "title": "Should simply equal to twelve!",
-      "fullTitle": "Function Should simply equal to twelve!",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
     }
   ]
-}Failures: 0
+}Failures: 1
