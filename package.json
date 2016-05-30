@@ -6,9 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Philip Jama",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^2.11.0",
+    "node-uuid": "^1.4.7",
     "vm2": "^2.0.2"
   }
 }
