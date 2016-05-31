@@ -14,7 +14,8 @@ var studentCode = `
     };
   };
 
-  var x = 12;
+  var x = 11; // should be 12 (to pass test)
+  console.log("YARRR!")
 `;
 
 let specFile = "./test-code.js";

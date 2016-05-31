@@ -7,7 +7,8 @@ const RULES   = require("./rules.json");
 
 class TestRunner {
   constructor() {
-    this.mocha = new Mocha({ reporter: "json" });
+    this.mocha = new Mocha();
+    // this.mocha = new Mocha({ reporter: "json" });
   }
   
   run(code, specFile, cb) {
@@ -50,7 +51,10 @@ class TestRunner {
   runMocha(testFile, cb) {
     let promise = new Promise((resolve, reject) => {
       this.mocha.addFile(testFile);
-      this.mocha.run().on("end", function() {
+      this.mocha
+        .globals({})
+        .run()
+        .on("end", function() {
         resolve(this.stats); // return test statistics
       });
     });
